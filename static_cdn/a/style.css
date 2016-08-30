@@ -1,0 +1,391 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #00bff3;
+  background-image: url("bg.jpg");
+}
+
+h1 {margin: 0px 0px 0px 0px;}
+h3 {margin: 0px 0px 0px 0px;}
+
+#page {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg.jpg); 
+  margin: 0px;
+  padding: 0px;
+}
+
+#page h1 {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Arial;
+  margin: 0px 0px 0px 0px; 
+}
+
+#page h3 { 
+  font-weight: lighter;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+#header {
+  width: 500px;
+  height: auto;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 500px; }
+
+#search-form {
+  width: 854px;
+  height: 50px;
+  float: left;
+  margin-left: 350px;
+  margin-top: 50px;
+/*  background: #589442;*/ }
+
+
+.input-text-1 {
+  float: left;
+  width: 450px;
+  height: 50px;
+  border-radius: 3px;
+  background: white; 
+}
+
+.input-text-1 span {
+  margin-top: 10px;
+  margin-left: 5px;
+  cursor: default;
+  font-size: 17px;
+  font-family: Arial;
+  font-weight: bold; }
+
+.input-text-1 #input-1 {
+  width: 396px;
+  height: 48px;
+  margin-left: 5px;
+  font-size: 17px;
+  border: 0px; 
+}
+
+.input-text-1 #input-1:focus{
+  outline-width: 0;
+}
+
+.input-text-2 {
+  float: left;
+  width: 250px;
+  height: 50px;  
+  border-radius: 3px;
+  margin-left: 3px;
+  background: white; 
+}
+
+
+.input-text-2 span {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 17px;
+  font-family: Arial;
+  cursor: default;
+  font-weight: bold; }
+
+.input-text-2 #input-1 {
+  width: 196px;
+  height: 48px;
+  margin-left: 5px;
+  font-size: 17px;
+  border: 0px; 
+}
+
+.input-text-2 #input-1:focus{
+  outline-width: 0px;
+}
+
+
+button{
+  float: left;
+  margin-left: 1px;
+  width: 150px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 3px;
+  background-color: #f3b700;
+}
+
+/* Mobile in Portrait mode */
+@media only screen
+and (max-width: 320px) {
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: #00bff3;
+      background-image: url("bg.jpg");
+    }
+
+    h1 {margin: 0px 0px 0px 0px;}
+    h3 {margin: 0px 0px 0px 0px;}
+
+    #page {
+      width: 100%;
+      height: 100%;
+      background-image: url(img/bg.jpg); 
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #page h1 {
+      font-weight: bold;
+      font-size: 30px;
+      font-family: Arial;
+      margin: 0px 0px 0px 0px; 
+    }
+
+    #page h3 { 
+      width: 100%
+      font-weight: lighter;
+      font-size: 15px;
+      font-family: Arial;
+    }
+
+    #header {
+      width: 200px;
+      height: auto;
+      text-align: center;
+      margin-top: 150px;
+      margin-left: 50px; }
+
+    #search-form {
+      width: 320px;
+      height: auto;
+      float: left;
+      margin-left: 0px;
+      margin-top: 50px;
+      /*background: #589442;*/ }
+
+
+    .input-text-1 {
+      float: left;
+      width: 320px;
+      height: 50px;
+      margin: 0px 0px 0px 0px; 
+      border-radius: 0px;
+      background: white; 
+    }
+
+    .input-text-1 span {
+      margin-top: 10px;
+      margin-left: 5px;
+      cursor: default;
+      font-size: 17px;
+      font-family: Arial;
+      font-weight: bold; }
+
+    .input-text-1 #input-1 {
+      width: 140px;
+      height: 48px;
+      margin-left: 5px;
+      font-size: 17px;
+      border: 0px; 
+    }
+
+    .input-text-1 #input-1:focus{
+      outline-width: 0;
+    }
+
+    .input-text-2 {
+      float: left;
+      width: 320px;
+      height: 50px;  
+      border-radius: 0px;
+      margin-top: 10px;
+      margin-left: 0px;
+      background: white; 
+    }
+
+
+    .input-text-2 span {
+      margin-top: 10px;
+      margin-left: 5px;
+      font-size: 17px;
+      font-family: Arial;
+      cursor: default;
+      font-weight: bold; }
+
+    .input-text-2 #input-1 {
+      width: 196px;
+      height: 48px;
+      margin-left: 5px;
+      font-size: 17px;
+      border: 0px; 
+    }
+
+    .input-text-2 #input-1:focus{
+      outline-width: 0px;
+    }
+
+
+    button{
+      float: left;
+      margin-top: 15px;
+      margin-left: 80px;
+      width: 150px;
+      height: 50px;
+      font-size: 17px;
+      font-weight: bold;
+      border: 0px;
+      border-radius: 3px;
+      background-color: #f3b700;
+    }
+  
+}
+
+/* Mobile in Landscape mode */
+@media only screen
+and (min-width: 321px)
+and (max-width: 480px) {
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: #00bff3;
+      background-image: url("bg.jpg");
+    }
+
+    h1 {margin: 0px 0px 0px 0px;}
+    h3 {margin: 0px 0px 0px 0px;}
+
+    #page {
+      width: 100%;
+      height: 100%;
+      background-image: url(img/bg.jpg); 
+      margin: 0px 0px 0px 50px;
+      padding: 0px;
+    }
+
+    #page h1 {
+      font-weight: bold;
+      font-size: 30px;
+      font-family: Arial;
+      margin: 0px 0px 0px 0px; 
+    }
+
+    #page h3 { 
+      width: 100%
+      font-weight: lighter;
+      font-size: 15px;
+      font-family: Arial;
+    }
+
+    #header {
+      width: 200px;
+      height: auto;
+      text-align: center;
+      margin-top: 150px;
+      margin-left: 50px; }
+
+    #search-form {
+      width: 320px;
+      height: auto;
+      float: left;
+      margin-left: 0px;
+      margin-top: 50px;
+      /*background: #589442;*/ }
+
+
+    .input-text-1 {
+      float: left;
+      width: 320px;
+      height: 50px;
+      margin: 0px 0px 0px 0px; 
+      border-radius: 0px;
+      background: white; 
+    }
+
+    .input-text-1 span {
+      margin-top: 10px;
+      margin-left: 5px;
+      cursor: default;
+      font-size: 17px;
+      font-family: Arial;
+      font-weight: bold; }
+
+    .input-text-1 #input-1 {
+      width: 140px;
+      height: 48px;
+      margin-left: 5px;
+      font-size: 17px;
+      border: 0px; 
+    }
+
+    .input-text-1 #input-1:focus{
+      outline-width: 0;
+    }
+
+    .input-text-2 {
+      float: left;
+      width: 320px;
+      height: 50px;  
+      border-radius: 0px;
+      margin-top: 10px;
+      margin-left: 0px;
+      background: white; 
+    }
+
+
+    .input-text-2 span {
+      margin-top: 10px;
+      margin-left: 5px;
+      font-size: 17px;
+      font-family: Arial;
+      cursor: default;
+      font-weight: bold; }
+
+    .input-text-2 #input-1 {
+      width: 196px;
+      height: 48px;
+      margin-left: 5px;
+      font-size: 17px;
+      border: 0px; 
+    }
+
+    .input-text-2 #input-1:focus{
+      outline-width: 0px;
+    }
+
+
+    button{
+      float: left;
+      margin-top: 15px;
+      margin-left: 80px;
+      width: 150px;
+      height: 50px;
+      font-size: 17px;
+      font-weight: bold;
+      border: 0px;
+      border-radius: 3px;
+      background-color: #f3b700;
+    }
+  
+}
+
+/* Tablets */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px) {
+  /*add style here*/
+}
+
+/* Desktops and Laptops computers */
+@media only screen
+and (min-width: 1224px) {
+  /*Syle goes here*/
+}
+
+/* very large screen devices */
+@media only screen
+and (min-width: 1824px){
+  /*Style goes here*/
+}

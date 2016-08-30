@@ -1,0 +1,287 @@
+html {
+ overflow:auto;
+ overflow:visible: 
+}
+
+
+
+body {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+    background-color: #d7d7d7; /*rgba(5,0,3, 0.10);*/
+	position: relative;
+}
+
+ul {
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    list-style:none;
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+#header-menu {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 100%;
+	height: 60px;
+	background-color: #01325b; 
+}
+
+#header-menu #logo{
+	margin-top: 0px;
+	margin-left: 250px;
+	padding: 0px 0px 0px 00px;
+	width: 200px;
+	height: auto;
+	font-family: 'Arial';
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	float: left;
+
+}
+#header-menu #device{
+	float: right;
+	margin-top: 20px;
+	margin-right: 100px;
+	padding: 0px 0px 0px 00px;
+}
+#header-menu #device ul li{
+	display:inline-block;
+	margin: 0px 10px;
+	list-style: inline;
+}
+#header-menu #device a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Arial';
+	font-weight: normal;
+	font-size: 15px;
+
+}
+
+#header-menu #search-form{
+	float: left;
+	margin-top: 8px;
+	margin-left: 70px;
+}
+
+.input-text-1 {
+  float: left;
+  width: 350px;
+  height: 40px;
+  border-radius: 3px;
+  background: white; 
+}
+
+.input-text-1 span {
+  margin-top: 10px;
+  margin-left: 5px;
+  cursor: default;
+  font-size: 17px;
+  font-family: Arial;
+  font-weight: bold; }
+
+.input-text-1 #input-1 {
+  width: 296px;
+  height: 38px;
+  margin-left: 5px;
+  font-size: 17px;
+  border: 0px; 
+}
+
+.input-text-1 #input-1:focus{
+  outline-width: 0;
+}
+
+
+.input-text-2 {
+  float: left;
+  width: 250px;
+  height: 40px;  
+  border-radius: 3px;
+  margin-left: 3px;
+  background: white; 
+}
+
+
+.input-text-2 span {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 17px;
+  font-family: Arial;
+  cursor: default;
+  font-weight: bold; }
+
+.input-text-2 #input-1 {
+  width: 196px;
+  height: 38px;
+  margin-left: 5px;
+  font-size: 17px;
+  border: 0px; 
+}
+
+.input-text-2 #input-1:focus{
+  outline-width: 0px;
+}
+
+
+button{
+  float: left;
+  margin-left: 4px;
+  width: 120px;
+  height: 40px; 
+  font-size: 17px;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 3px;
+  background-color: #f3b700;
+}
+
+
+
+
+
+
+
+
+ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+
+
+
+#item-page{
+	width: 1000px;
+	margin-top: 30px;
+	margin-left: 250px;
+}
+
+
+#pica {
+	width: 700px;
+	height: 350px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+#pica img {
+	width: 685px;
+	height: 350px;
+
+}
+
+#B-rates{
+	width: 300px;
+	float: right;
+	height: 350px;
+	background-color: #fff;
+}
+
+
+#entire{
+
+	text-align: center;
+	margin:30px 0px 0px 0px;
+}
+
+#entire li#c-logo{
+	margin-bottom: 10px;
+}
+
+#entire li#c-logo img{
+	width: 120px;
+	height: 120px;
+}
+
+#entire li{
+
+	font-weight: normal;
+	font-family: Arial;
+}
+
+li#Name h2{
+	cursor: default;
+	margin: 0px 0px 0px 0px;
+	font-size: 20px;
+}
+ul#contact{
+	cursor: default;
+	font-size: 15px;
+}
+
+
+ul#contact li{
+	margin: 10px 0px;
+}
+
+ul#contact li:first-child{
+	margin-top: 5px;
+}
+
+
+
+#Description{
+	margin-top: 20px;
+	float: left;	
+	width: 685px;
+	height:800px;
+	background-color: #fff;
+}
+
+
+#Description h2{
+	font-size: 15px;
+	font-family: 'Arial';
+	margin-top: 10px;
+	padding: 0px 0px 0px 0px;
+	margin-bottom:0px ;
+	margin-left: 15px;
+}
+
+#Description p{
+	font-size: 13px;
+	width: 600px;
+	font-family: 'Arial';
+	margin-top: 10px;
+	margin-bottom:0px ;
+	margin-left: 15px;
+}
+
+
+
+
+#R-Hotels {
+	float: left;
+	margin-top: 20px;
+	margin-left: 15px;
+	width: 300px;
+	height: 500px;
+	background: black;
+}
+
+
+
+
+#footer{
+	float: left;
+	margin-top: 151px;
+	width: 100%;
+	height:200px;
+	background-color: #002b4d;
+}
+

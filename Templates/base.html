@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Discoverwanda</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!--<link rel="stylesheet" type="text/css" href="scss/main.css">-->
+	<link rel="stylesheet" type="text/css" href="/static/a/style.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<h1>Discoverwanda</h1>
+			<h3>Find Business,Shops,Things to do and many more</h3>
+		</div>
+		
+		<div id="search-form">
+			<form action="{% url 'Businesses.views.search_result' %}" method="GET">
+				<div class="input-text-1"">
+					<span>Find:</span><input type="text" name="q" placeholder="Hotels, Restaurant"  id="input-1">
+				</div>
+				<div class="input-text-2" id="input-2">
+					<span>Near:</span><input type="text" name="city" placeholder="Kigali"  id="input-1">
+				</div>				
+				<button type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

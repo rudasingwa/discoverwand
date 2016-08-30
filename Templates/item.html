@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Discoverwanda</title>
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<script type="text/javascript" src="/static/js/Index.js"></script>
+	<!--<link rel="stylesheet" type="text/css" href="scss/main.css">-->
+	<link rel="stylesheet" type="text/css" href="/static/a/item.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+	<div id="header-menu">
+		<div id="logo"><a href="{% url 'Businesses.views.homepage' %}"><h1>Discoverwanda</h1></a></div>
+		<div id="search-form">
+			<form action="{% url 'Businesses.views.search_result' %}" method="GET"onsubmit="return search();">
+				<div class="input-text-1"">
+					<span>Find:</span><input type="text" name="q" placeholder="Hotels, Restaurant"  id="input-1">
+				</div>
+				<div class="input-text-2" id="input-2">
+					<span>Near:</span><input type="text" name="city" placeholder="Kigali"  id="input-1">
+				</div>				
+				<button type="submit">Search</button>
+			</form>
+		</div>
+		<!--<div id="device">
+			<ul>
+				<li><a href="">Log in</a></li>
+				<li><a href="">Register</a></li>
+			</ul>						
+		</div>	-->
+	</div>
+	<div id="item-page">
+		<div id="pica">
+			<ul>
+			{% for img in images %}
+				<li><img class="mySlides" src="{{ img.Image.url }}" style ="width:100%"></li>			
+			</ul>
+			<a class="w3-btn-floating1" onclick="plusDivs(-1)">❮</a>
+			<a class="w3-btn-floating" onclick="plusDivs(1)">❯</a>
+			
+			{% endfor %}			
+		</div>
+
+		<div id="B-rates">
+			<ul id="entire">
+				<li id="c-logo"><img src="{{ instance.Companylogo.url }}"></li>
+				<li id="Name"><h2>{{ instance.CompanyName }}</h2></li>
+				<li><ul id="contact">
+							<li>{{ instance.Address }}, {{ instance.Location }}, Rwanda</li>
+							<li><a href="">{{ instance.PhoneNumber }}</a></li>
+							<li><a href="">E-mail hotel</a></li>
+							<li><a href="{{ instance.Website }}" target="_blank">Website</a></li>
+							
+					</ul>
+					
+				</li>
+			</ul>				
+		</div>
+
+		<div id="Description">
+				<h2>Description:</h2> 
+				<p>{{ instance.BusinessDescription }}</p>
+		</div>	
+				
+		<div id="R-Hotels">
+				Related Hotels
+				<ul>
+					<li><a href="index.html">Marriott</a></li>
+					<li><a href="">Marriott</a></li>
+					<li><a href="">Marriott</a></li>
+				</ul>
+				<a href="Answer.html">Se all Kigali Hotels</a>
+		</div>
+
+	</div>
+
+
+
+	<div id="footer"></div>
+
+
+
+</body>
+</html>

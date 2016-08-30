@@ -1,0 +1,114 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BzRwanda</title>	
+	<link rel="stylesheet" type="text/css" href="/static/a/result.css" />
+	<script type="text/javascript" src="/static/js/Index.js"></script>
+</head>
+<body>
+
+	<div id="header-menu">
+		<div id="logo"><a href="{% url 'Businesses.views.homepage' %}"><h1>Discoverwanda</h1></a></div>
+		<div id="search-form">
+			<form action="{% url 'Businesses.views.search_result' %}" method="GET"onsubmit="return search();">
+				<div class="input-text-1"">
+					<span>Find:</span><input type="text" name="q" placeholder="Hotels, Restaurant"  id="input-1">
+				</div>
+				<div class="input-text-2" id="input-2">
+					<span>Near:</span><input type="text" name="city" placeholder="Kigali"  id="input-1">
+				</div>				
+				<button type="submit">Search</button>
+			</form>
+		</div>
+		<!--<div id="device">
+			<ul>
+				<li><a href="">Log in</a></li>
+				<li><a href="">Register</a></li>
+			</ul>						
+		</div> -->	
+	</div>
+
+	<div id="Hotel">
+		<div id="list-header">
+				<h2>{{ bznss }} in {{ cite }}</h2>
+			</div>
+		<ul id="htel">
+		{% if business_list != 0 %}
+			{% for biz in business_list %}
+				<li>
+					<a href="{{ biz.get_absolute_url }}"><img src="{{biz.LogoPreview.url}}"></a>
+					<a href="{{ biz.get_absolute_url }}"><div id="hname">{{ biz.CompanyName }}</div></a>
+					<div id="location">{{ biz.Address }}, {{ biz.Location }}, Rwanda</div>
+					<div id="filtra">
+						<span>{{ biz.PhoneNumber }}</span> | 
+						<a href="{{ biz.Website }}" target="_blank"><span>Website</span></a>
+					</div>
+						
+					<div id="description"><p>{{ biz.BusinessDescription|truncatewords:15 }}</p></div>
+				</li> 
+			{% endfor %}			 
+		{% else %}
+			print "No match found"
+		{% endif %}
+		</ul>
+	</div>
+	<!--<div id="middle-result">
+		<div id="result">
+			<div id="list-header">
+				<h2>Business in Kigali</h2>
+			</div>
+			<ul id="result-list">
+			
+				<li id="item">
+					<div id="s-detail">
+					<ul>
+						<li><a href='item.html'><h1>Business Name</h1></a></li>
+						<li><span>Address</span> | <span>Location</span></li>
+						<li><span>Phone</span> | <span>Website</span> </li>
+						<li><a href="details.html">More info</a></li>
+					</ul>
+					</div>
+					<div id="c-logo">
+						<a href=""><a href=""><img src="img/Wenger.jpg" id="logo" width="70px" height="70px"></a>
+					</div>					
+				</li>
+
+				<li id="item">
+					<div id="s-detail">
+					<ul>
+						<li><a href='{% nav.get_absolute_url }'><h1>Business Name</h1></a></li>
+						<li><span>Address</span> | <span>Location</span></li>
+						<li><span>Phone</span> | <span>Website</span> </li>
+						<li><a href="details.html">More info</a></li>
+					</ul>
+					</div>
+					<div id="c-logo">
+						<a href=""><a href=""><img src="img/Wenger.jpg" id="logo" width="70px" height="70px"></a>
+					</div>					
+				</li>
+			
+				<li id="item">
+					<div id="s-detail">
+					<ul>
+						<li><a href="details.html"><h1>Bourbon Coffe</h1></a></li>
+						<li><span>Address</span> | <span>Location</span></li>
+						<li><span>Phone</span> | <span>Website</span> </li>
+						<li><a href="details.html">More info</a></li>
+					</ul>
+					</div>
+					<div id="c-logo">
+						<a href=""><img src="img/Wenger.jpg" id="logo" width="70px" height="70px"></a>
+					</div>					
+				</li>
+			</ul>
+			<div id="s-map">				
+			</div>
+		</div>
+	</div>-->
+	<div id="footer"></div>
+
+</body>
+</html>
